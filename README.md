@@ -10,18 +10,20 @@ $ pip3 install ctmd5
 ## 使用
 ``` shell
 $ ctmd5 -h
-usage: ctmd5.py [-h] [-s] [-v] FILE
+usage: ctmd5.py [-h] [-s] [-v] FILE [-d] Dir_name 
+# -f and -d are mutually exclusive
 
 a cli tool used to change the MD5 of files
 
-positional arguments:
-  FILE           the file you want to change md5
-
 optional arguments:
+  -f  -- file    the file you want to change md5
+  -d  --dir      change the md5 value for each of the files in a given directory
   -h, --help     show this help message and exit
   -s, --show     show the md5 value
   -v, --version  show program's version number and exit
 ```
+
+
 
 ## 示例
 
